@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "react-native-todolist",
-    "slug": "react-native-todolist",
+    "slug": "to-do-list",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -25,6 +25,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "97a99fb2-1058-4373-8cf6-3bc0933ad6e6"
+      }
+    },
+    "owner": "tiboleboss",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/97a99fb2-1058-4373-8cf6-3bc0933ad6e6"
     }
   }
 }
