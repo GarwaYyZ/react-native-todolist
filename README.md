@@ -1,3 +1,5 @@
+Dowload "Expo Go" App in Google Store or Apple Store
+
 Android APP : 
 
 ![image](https://github.com/GarwaYyZ/react-native-todolist/assets/89141017/edfc84ff-897f-416d-88e4-1e6904191b73)
