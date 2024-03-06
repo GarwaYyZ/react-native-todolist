@@ -2,8 +2,8 @@ Dowload "Expo Go" App in Google Store or Apple Store
 
 Android APP : 
 
-![image](https://github.com/GarwaYyZ/react-native-todolist/assets/89141017/edfc84ff-897f-416d-88e4-1e6904191b73)
+![image](https://github.com/GarwaYyZ/react-native-todolist/assets/89141017/be811dc8-cf15-4de8-b89c-e26d3100a7db)
 
 IOS APP : 
 
-![image](https://github.com/GarwaYyZ/react-native-todolist/assets/89141017/5b14d2d7-7279-4f86-a4ba-44070c39c9a2)
+![image](https://github.com/GarwaYyZ/react-native-todolist/assets/89141017/05ff5613-993d-4ee6-8887-f9b6705de970)
