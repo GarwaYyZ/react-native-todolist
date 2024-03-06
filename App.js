@@ -48,6 +48,22 @@ const App = () => {
     );
   };
 
+
+  function countTasks(category) {
+    switch (category) {
+      case 'all':
+        return toDoList.length;
+      case 'inProgress':
+        return toDoList.filter(todo => !todo.isCompleted).length;
+      case 'done':
+        return toDoList.filter(todo => todo.isCompleted).length;
+      default:
+        return 0;
+    }
+  }
+
+  
+
   const updateTodo = (todo) => {
     const updatedTodo = { ...todo, isCompleted: !todo.isCompleted };
     const indexToUpdate = toDoList.findIndex((item) => item.id === updatedTodo.id);
@@ -122,10 +138,19 @@ const App = () => {
         <Header />
       </View>
       <ScrollView contentContainerStyle={styles.scrollViewContent}>
-        {renderToDoList()}
+        <View style={styles.body}>
+          {renderToDoList()}
+        </View>
       </ScrollView>
+      <BoutonAdd onPress={showAddDialog} />
       <View style={styles.footer}>
-        <TabBottomMenu onPress={setSelectedTabName} selectedTabName={selectedTabName} />
+        <TabBottomMenu 
+          onPress={setSelectedTabName} 
+          selectedTabName={selectedTabName} 
+          allCount={countTasks('all')} 
+          inProgressCount={countTasks('inProgress')} 
+          doneCount={countTasks('done')} 
+        />
       </View>
       <Dialog.Container
         visible={isAddDialogVisible}
@@ -140,9 +165,8 @@ const App = () => {
           onPress={addTodo}
         />
       </Dialog.Container>
-      <BoutonAdd onPress={showAddDialog} />
     </SafeAreaView>
-  );
+  );  
 };
 
 export default App;

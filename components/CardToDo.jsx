@@ -14,11 +14,12 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    padding: 10,
+    padding: 25,
     borderWidth: 1,
     borderColor: '#ccc',
-    borderRadius: 5,
+    borderRadius: 25,
     marginBottom: 10,
+    marginHorizontal: 20
   },
   text: {
     flex: 1,

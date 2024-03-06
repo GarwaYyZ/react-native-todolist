@@ -5,25 +5,20 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    flex: 1,
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
   },
   body: {
-    flex: 5,
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1,
   },
   footer: {
-    flex: 0.5,
     justifyContent: 'center',
     alignItems: 'center',
   },
   scrollViewContent: {
     paddingBottom: 100,
   },
-  
 });
 
 export default styles;

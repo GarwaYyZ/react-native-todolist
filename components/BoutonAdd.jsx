@@ -1,19 +1,24 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
 
 const BoutonAdd = ({ onPress }) => {
   return (
-    <TouchableOpacity style={styles.button} onPress={onPress}>
-      <Text style={styles.text}>Ajouter une tâche</Text>
-    </TouchableOpacity>
+    <View style={styles.container}>
+      <TouchableOpacity style={styles.button} onPress={onPress}>
+        <Text style={styles.text}>+ New todo</Text>
+      </TouchableOpacity>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
-  button: {
+  container: {
     position: 'absolute',
-    bottom: 20,
-    right: 20,
+    bottom: '13%',
+    right: 15,
+    alignItems: 'center',
+  },
+  button: {
     backgroundColor: '#2F76E5',
     padding: 10,
     borderRadius: 10,

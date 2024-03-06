@@ -3,11 +3,15 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    gap: 10,
     justifyContent: 'space-around',
     paddingVertical: 10,
     borderTopWidth: 1,
     borderTopColor: '#ccc',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: '#fff',
   },
   button: {
     paddingHorizontal: 20,
